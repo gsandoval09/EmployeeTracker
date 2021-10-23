@@ -1,7 +1,7 @@
-DROP DATABASE IF EXISTS S.H.I.E.L.D. (
-USE S.H.I.E.L.D.;
+DROP DATABASE IF EXISTS Headquarters_db; (
+USE Headquarters_db;
 
-Use S.H.I.E.L.D.;
+Use Headquarters_db;
 );
 
 CREATE TABLE department (
