@@ -1,6 +1,4 @@
-DROP DATABASE IF EXISTS Headquarters_db;
-CREATE DATABASE Headquarters_db;
+SELECT *
+FROM  role
+JOIN department ON role.department = department_id;
 
-CREATE TABLE employee (
-    id 
-)

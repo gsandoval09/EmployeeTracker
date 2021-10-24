@@ -1,10 +1,9 @@
 const inquirer = require("inquirer");
 
 const fs = require("fs")
-const markdown = require("./db")
 const path = require("path")
 
-function promptUser(){
+function promptUser() {
     return inquirer.prompt([
 
         {
@@ -17,7 +16,7 @@ function promptUser(){
         {
             type: "input",
             message: "What is the name of the department?",
-            name: "department"
+            name: "department",
         },
 
         {
@@ -28,18 +27,19 @@ function promptUser(){
 
         {
             type: "input",
-            message: "",
-            name: "",
+            message: "Are you a baby or a boy",
+            name: "Baby",
         },
 
         {
             type: "input",
-            message: "",
-            name:"",
+            message: "What is your job like",
+            name: "jobstatus",
+
         },
     ])
+    
 }
 
-    
-
+promptUser();
 
