@@ -1,8 +1,9 @@
-DROP DATABASE IF EXISTS Headquarters_db; (
-USE Headquarters_db;
+DROP DATABASE IF EXISTS Theraft_db; (
+USE Theraft_db;
 
-Use Headquarters_db;
+Use Theraft_db;
 );
+
 
 CREATE TABLE department (
 id: INT PRIMARY KEY,

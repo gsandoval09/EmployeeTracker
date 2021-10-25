@@ -14,9 +14,10 @@ function promptUser() {
         },
 
         {
-            type: "input",
-            message: "What is the name of the department?",
-            name: "department",
+            type: "list",
+            message: "What is the name of the Employee you are looking for?",
+            name: "employee",
+            choices: ["Wilson Fisk", "Curt Connors", "Eddie Brock", "Norman Osborn","" ]
         },
 
         {
@@ -40,6 +41,7 @@ function promptUser() {
     ])
     
 }
+
 
 promptUser();
 
