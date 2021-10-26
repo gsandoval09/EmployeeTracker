@@ -41,4 +41,4 @@ This project is licensed under the MIT License
 
 ## Screenshot of site
 
-![Image](Readme-gen-pic.png)
+<!-- ![Image]() -->
