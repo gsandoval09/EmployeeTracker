@@ -24,14 +24,15 @@ function promptUser() {
             .then((answer) => {
                 switch (answer.action) {
                     case "View All Employees";
-                    viewAllEmp();
+                    viewAllEmployees();
                     break;
 
                     case "View all employees by department";
-                    viewAllEmpbyDept();
+                    viewAllEmployeesbyDepartment();
                     break;
 
                     case "view all employees by role";
+                    viewAllEmployeesbyRole();
                     break;
             }
             }),

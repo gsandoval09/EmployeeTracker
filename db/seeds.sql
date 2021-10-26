@@ -52,6 +52,3 @@ VALUES ("Otto", "Octavius", "Lawyer", 4, 4),
 
 <---employee roles--->
 
-INSERT INTO role (id, title, salary, department_id)
-VALUES (1, "Sales Lead", 40000, Legal)
-
