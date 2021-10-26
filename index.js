@@ -17,25 +17,28 @@ function promptUser() {
             type: "list",
             message: "What is the name of the Department?",
             name: "department",
-            choices: ["Business Management", "Science", "Information Technology", "Security","" ]
+            choices: ["Engineering", "Finance", "Legal", "Sales","Service" ]
         },
 
         {
-            type: "input",
+
+            type: "list",
             message: "What would you like to do?",
-            name: ["View All Employees", "Add Employee", "Update Employee Role", "View All Roles", "Add Role", "View All Departments", "Add Department"],
+            name: "askuser",
+            choices:["View All Employees", "Add Employee", "Update Employee Role", "View All Roles", "Add Role", "View All Departments", "Add Department"],
         },
 
         {
             type: "input",
             message: "What is the name of the role?",
-            name: "Baby",
+            name: "askrole",
         },
 
         {
-            type: "input",
-            message: "What is your job like",
+            type: "list",
+            message: "What would you like to do?",
             name: "jobstatus",
+            choices: ["View All Employees", "Add Employee", "Update Employee Role", "View All Roles", "Add Role", "View All Departments", "Add Department"],
 
         },
     ])
