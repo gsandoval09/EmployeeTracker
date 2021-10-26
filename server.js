@@ -3,7 +3,7 @@ const mysql = require('mysql12');
 const PORT = process.env.PORT || 
 3001;
 const app = express();
-const consoleTable =require('console.table');
+// const consoleTable =require('console.table');
 const db = mysql.createConnection(
     {
         host: "localhost",
