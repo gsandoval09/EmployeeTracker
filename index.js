@@ -1,8 +1,8 @@
 const inquirer = require("inquirer");
-
+const cTable = require('console.table');
 const fs = require("fs")
 const path = require("path")
-// const consoleTable = require('console table');
+const consoleTable = require('console table');
 function promptUser() {
     return inquirer.prompt([
 
@@ -18,22 +18,23 @@ function promptUser() {
                 "View All Departments",
                 "Add Department"
             ]
-
         },
-            // .then((answer) => {
-            //     switch (answer.action) {
-            //         case "View All Employees";
-            //         viewAllEmp();
-            //         break;
 
-            //         case "View all employees by department";
-            //         viewAllEmpbyDept();
-            //         break;
+        
+            .then((answer) => {
+                switch (answer.action) {
+                    case "View All Employees";
+                    viewAllEmp();
+                    break;
 
-            //         case "view all employees by role";
-            //         break;
-            // }
-            // }),
+                    case "View all employees by department";
+                    viewAllEmpbyDept();
+                    break;
+
+                    case "view all employees by role";
+                    break;
+            }
+            }),
         
         {
             type: "list",

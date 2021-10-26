@@ -8,7 +8,7 @@ INSERT INTO department (id, name)
 VALUES (1, "Finance");
 
 INSERT INTO department (id, name)
-VALUES (2, "LEgal");
+VALUES (2, "Legal");
 
 INSERT INTO department (id, name)
 VALUES (3, "Sales");
@@ -16,7 +16,7 @@ VALUES (3, "Sales");
 INSERT INTO department (id,name)
 VALUES (4, "Service");
 
-
+<---Roles--->
 INSERT INTO role(title, salary, department_id);
 VALUES ("Sales Lead", 45000, 1), 
 ("Salesperson", 30000, 2), 
@@ -25,14 +25,33 @@ VALUES ("Sales Lead", 45000, 1),
 ("Legal Team Lead", 60000, 5), 
 ("Lawyer", 1000, 6)
 
+
+<--employee info--->
 Insert INTO employee (first_name,last_name,department, title, role_id, manager_id,);
 VALUES ("Wilson", "Fisk","Finance","Sales Lead",1, 1),
-("Curt", "Connors","Legal", 2, 2),
-("Eddie", "Brock", 1, 1),
-("Norman", "Osborn","Accountant", 3, 2),
-("Cletus", "Kassidy","Salesperson", 2, 3),
-("Otto", "Octavius", "Lawyer", 4, 4),
 
-INSERT INTO 
 
+Insert INTO employee (first_name,last_name,department, title, role_id, manager_id,);
+VALUES ("Curt", "Connors","Legal", 2, 2),
+
+
+Insert INTO employee (first_name,last_name,department, title, role_id, manager_id,);
+VALUES ("Eddie", "Brock", "Lawyer", 1, 1),
+
+
+Insert INTO employee (first_name,last_name,department, title, role_id, manager_id,);
+VALUES ("Norman", "Osborn","Accountant", 3, 2),
+
+
+Insert INTO employee (first_name,last_name,department, title, role_id, manager_id,);
+VALUES ("Cletus", "Kassidy","Salesperson", 2, 3),
+
+
+Insert INTO employee (first_name,last_name,department, title, role_id, manager_id,);
+VALUES ("Otto", "Octavius", "Lawyer", 4, 4),
+
+<---employee roles--->
+
+INSERT INTO role (id, title, salary, department_id)
+VALUES (1, "Sales Lead", 40000, Legal)
 
