@@ -2,7 +2,7 @@ const inquirer = require("inquirer");
 
 const fs = require("fs")
 const path = require("path")
-
+// const consoleTable = require('console table');
 function promptUser() {
     return inquirer.prompt([
 
@@ -15,9 +15,9 @@ function promptUser() {
 
         {
             type: "list",
-            message: "What is the name of the Employee you are looking for?",
-            name: "employee",
-            choices: ["Wilson Fisk", "Curt Connors", "Eddie Brock", "Norman Osborn","" ]
+            message: "What is the name of the Department?",
+            name: "department",
+            choices: ["Business Management", "Science", "Information Technology", "Security","" ]
         },
 
         {
@@ -28,7 +28,7 @@ function promptUser() {
 
         {
             type: "input",
-            message: "Are you a baby or a boy",
+            message: "What is the name of the role?",
             name: "Baby",
         },
 
