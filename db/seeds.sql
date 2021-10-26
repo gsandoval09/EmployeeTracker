@@ -16,3 +16,7 @@ VALUES ("Wilson", "Fisk","Finance","Sales Lead",1, 1),
 ("Norman", "Osborn", 3, 2),
 ("Cletus", "Kassidy", 2, 3),
 ("Otto", "Octavius", 4, 4),
+
+INSERT INTO 
+
+

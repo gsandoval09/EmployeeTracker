@@ -10,14 +10,41 @@ function promptUser() {
             type: "list",
             message: "What would you like to do?",
             name: "ask",
-            choices: ["View All Employees", "Add Employee", "Update Employee Role", "View All Roles", "Add Role", "View All Departments", "Add Department"],
-        },
+            choices: ["View All Employees",
+                "Add Employee",
+                "Update Employee Role",
+                "View All Roles",
+                "Add Role",
+                "View All Departments",
+                "Add Department"
+            ]
 
+        },
+            // .then((answer) => {
+            //     switch (answer.action) {
+            //         case "View All Employees";
+            //         viewAllEmp();
+            //         break;
+
+            //         case "View all employees by department";
+            //         viewAllEmpbyDept();
+            //         break;
+
+            //         case "view all employees by role";
+            //         break;
+            // }
+            // }),
+        
         {
             type: "list",
             message: "What is the name of the Department?",
             name: "department",
-            choices: ["Engineering", "Finance", "Legal", "Sales","Service" ]
+            choices: ["Engineering",
+                "Finance",
+                "Legal",
+                "Sales",
+                "Service"
+            ]
         },
 
         {
@@ -25,7 +52,13 @@ function promptUser() {
             type: "list",
             message: "What would you like to do?",
             name: "askuser",
-            choices:["View All Employees", "Add Employee", "Update Employee Role", "View All Roles", "Add Role", "View All Departments", "Add Department"],
+            choices: ["View All Employees",
+                "Add Employee",
+                "Update Employee Role",
+                "View All Roles",
+                "Add Role",
+                "View All Departments",
+                "Add Department"],
         },
 
         {
@@ -38,13 +71,18 @@ function promptUser() {
             type: "list",
             message: "What would you like to do?",
             name: "jobstatus",
-            choices: ["View All Employees", "Add Employee", "Update Employee Role", "View All Roles", "Add Role", "View All Departments", "Add Department"],
+            choices: ["View All Employees",
+                "Add Employee",
+                "Update Employee Role",
+                "View All Roles",
+                "Add Role",
+                "View All Departments",
+                "Add Department"],
 
         },
     ])
-    
-}
 
+}
 
 promptUser();
 
