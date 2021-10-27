@@ -1,7 +1,7 @@
-DROP DATABASE IF EXISTS Theraft_db; (
-USE Theraft_db;
+DROP DATABASE IF EXISTS work_db; (
+CREATE DATABASE work_db;
 
-Use Theraft_db;
+USE work_db;
 );
 
 

@@ -1,11 +1,15 @@
-// const mysql = require("myswl12")
+const mysql = require('mysql12');
+const util = require ('util');
+const db = mysql.createConnection(
+    {
+        host: "localhost",
+        user: 'root',
+        password: 'password',
+        database: 'work'
+    },
+    console.log('Connectd to work database.')
+);
+db.connect()
+db.query = util.promisify(db.query)
 
-// var connection = mysql.createConnection({
-//     host: "localhost", 
-// })
-
-// connection.connect(function (err) {})
-
-// module.exports = connect
-
-// connect.query ('?',)
+module.exports= db;
