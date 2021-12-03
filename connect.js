@@ -8,6 +8,7 @@ const db = mysql.createConnection(
         multipleStatements: true
     },
 );
+// connection to database with show us an error if fails to compile
 db.connect(function (err) {
     if (err) {
         console.log(err);
@@ -18,6 +19,7 @@ db.connect(function (err) {
 })
 db.query = util.promisify(db.query)
 
+// creates database query information and seeds them 
 var initializationQuery = `DROP DATABASE IF EXISTS work_db;
 CREATE DATABASE work_db;
 
@@ -44,6 +46,7 @@ role_id INT ,
 manager_id INT
 );`
 
+// This tells us certain results to seed based on the other data above
 var seedQuery = `INSERT INTO department (name)
 VALUES ("Engineering"), 
 ("Finance"),

@@ -14,11 +14,14 @@ None.
 
 ![Image](jobtitletable.png)
 
+
 ![Image](employeetable.png)
+
+
 
 ## Built With
 * [Node.js]
-* [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+* [Javascript]
 * [MySQL]
 
 ## Deployed Link

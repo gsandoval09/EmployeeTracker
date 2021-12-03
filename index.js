@@ -1,3 +1,4 @@
+// using inquirer
 const inquirer = require("inquirer");
 require('console.table');
 const fs = require("fs")
@@ -5,6 +6,7 @@ const path = require("path")
 const db = require("./connect.js")
 const dbemployee = require("./action.js")
 
+// this function shows in the database in the command line prompting the user to select between many different options
 function createNewManagerInDatabase() {
     inquirer.prompt([
         {
@@ -27,6 +29,7 @@ function createNewManagerInDatabase() {
             name: "officeNumber",
             message: "Team Manager's office number:"
         }
+        // returns back to the user the results based on the choices from the prompt above to what they wanted to see
     ]).then(val => {
         let name = val.name;
         let id = val.id;
@@ -42,6 +45,8 @@ function createNewManagerInDatabase() {
     })
 };
 createNewManagerInDatabase();
+
+
 // const consoleTable = require('console table');
 // function promptUser() {
 // inquirer.prompt([{
