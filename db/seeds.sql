@@ -1,11 +1,11 @@
 USE work_db;
 
-INSERT INTO department (name);
-VALUES ("Engineering", 
-"Finance",
-"Legal",
-"Sales",
-"Service");
+INSERT INTO department (name)
+VALUES ("Engineering"), 
+("Finance"),
+("Legal"),
+("Sales"),
+("Service");
 -- INSERT INTO department (id, name)
 -- VALUES (1, "Finance");
 
@@ -19,7 +19,7 @@ VALUES ("Engineering",
 -- VALUES (4, "Service");
 
 <---Roles--->
-INSERT INTO role(title, salary, department_id);
+INSERT INTO employeeRole (title, salary, department_id)
 VALUES ("Sales Lead", 45000, 1), 
 ("Salesperson", 30000, 2), 
 ("Software Engineer", 90000, 3), 
@@ -29,7 +29,7 @@ VALUES ("Sales Lead", 45000, 1),
 
 
 <--employee info--->
-Insert INTO employee (first_name, last_name, role_id, manager_id,);
+Insert INTO employee (first_name, last_name, role_id, manager_id)
 VALUES ("Wilson", "Fisk",1, 1),
 ("Curt", "Connors", 2, 2),
 ("Eddie", "Brock",  1, 1),

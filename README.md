@@ -10,6 +10,11 @@ Simply need to access this app through VS Studio Code. Once users have launched 
 
 None.
 
+## Screenshot
+
+![Image](jobtitletable.png)
+
+![Image](employeetable.png)
 
 ## Built With
 * [Node.js]
@@ -18,7 +23,7 @@ None.
 
 ## Deployed Link
 
-* [See Live Site]()
+* [See Live Site](https://gsandoval09.github.io/EmployeeTracker/)
 
 
 ## Authors
@@ -39,6 +44,5 @@ This project is licensed under the MIT License
 * Google
 * w3schools
 
-## Screenshot of site
 
-<!-- ![Image]() -->
+
